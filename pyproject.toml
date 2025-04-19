@@ -2,9 +2,7 @@
 name = "make-aggrid"
 version = "0.1.0"
 description = "Configura automaticamente o AgGrid no Streamlit com base em um DataFrame"
-authors = [
-    {name = "edwdev",email = "edjdevel@gmail.com"}
-]
+authors = ["edwdev <edjdevel@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/edwdev-oficial/make-aggrid"
