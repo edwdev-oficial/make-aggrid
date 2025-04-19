@@ -9,9 +9,6 @@ __pycache__/
 env/
 venv/
 
-# Poetry
-poetry.lock
-
 # Distribution / packaging
 build/
 dist/
