@@ -27,8 +27,8 @@ authors = [
 ]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/seuusuario/make-aggrid"
-repository = "https://github.com/seuusuario/make-aggrid"
+homepage = "https://github.com/edwdev-oficial/make-aggrid"
+repository = "https://github.com/edwdev-oficial/make-aggrid"
 keywords = ["streamlit", "aggrid", "pandas", "dataframe"]
 
 [tool.poetry.dependencies]
