@@ -11,8 +11,6 @@ keywords = ["streamlit", "aggrid", "pandas", "dataframe"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pandas = "^1.3"
-streamlit = "^1.0"
 
 [build-system]
 requires = ["poetry-core"]
