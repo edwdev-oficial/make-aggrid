@@ -1,17 +1,36 @@
 [tool.poetry]
 name = "make-aggrid"
-version = "0.1.4"
+version = "0.1.6"
 description = "Configura automaticamente o AgGrid no Streamlit com base em um DataFrame"
 authors = ["edwdev <edjdevel@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/edwdev-oficial/make-aggrid"
 repository = "https://github.com/edwdev-oficial/make-aggrid"
+documentation = "https://github.com/edwdev-oficial/make-aggrid/blob/main/CHANGELOG.md"
 keywords = ["streamlit", "aggrid", "pandas", "dataframe"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-streamlit-aggrid = "^1.1.3"
+streamlit-aggrid = "1.1.2"
+
+[tool.poetry.group.dev.dependencies]
+towncrier = "^23.6.0"
+
+[tool.towncrier]
+package = "make_aggrid"
+directory = "changelog"
+filename = "CHANGELOG.md"
+title_format = "## {version} - {project_date}"
+issue_format = "[#{issue}](https://github.com/edwdev-oficial/make-aggrid/issues/{issue})"
+template = "changelog/_template.j2"
+underlines = ["", ""]
 
 [build-system]
 requires = ["poetry-core"]

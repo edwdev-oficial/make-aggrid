@@ -1,0 +1,8 @@
+{% for section, entries in sections.items() %}
+{% if entries %}
+## {{ section }}
+{% for entry in entries %}
+- {{ entry }}
+{% endfor %}
+{% endif %}
+{% endfor %}
