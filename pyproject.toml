@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "make-aggrid"
-version = "0.1.7"
+version = "0.1.8"
 description = "Configura automaticamente o AgGrid no Streamlit com base em um DataFrame"
 authors = ["edwdev <edjdevel@gmail.com>"]
 license = "MIT"
