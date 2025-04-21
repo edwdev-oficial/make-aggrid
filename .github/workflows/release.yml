@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write  # necessário se quiser usar trusted publishing futuramente
 
 jobs:
   build-and-publish:
@@ -33,13 +34,15 @@ jobs:
           poetry install --no-root
 
       - name: Run Towncrier and commit changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           poetry run towncrier build --yes
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add CHANGELOG.md
-          git commit -m "chore: update changelog for release"
-          git push
+          git commit -m "chore: update changelog for release" || echo "No changes to commit"
+          git push origin HEAD:${{ github.ref_name }}
 
       - name: Build package
         run: poetry build
