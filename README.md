@@ -21,7 +21,7 @@ pip install make-aggrid streamlit-aggrid==1.1.2
 poetry add make-aggrid streamlit-aggrid@1.1.2
 ```
 
-⚠️ O make-aggrid requer Python 3.10 ou superior por depender do streamlit-aggrid =1.1.2.
+⚠️ O `make-aggrid` requer Python 3.10 ou superior (mas abaixo de 4.0) devido à dependência do `streamlit-aggrid` versão 1.1.2.
 
 ### Uso Básico
 ```python
