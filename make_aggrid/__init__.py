@@ -1,5 +1,5 @@
 # Versão do pacote
-__version__ = "0.1.6"
+__version__ = "0.1.7"
 
 from st_aggrid import AgGrid, GridOptionsBuilder
 
