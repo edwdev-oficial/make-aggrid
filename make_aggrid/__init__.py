@@ -1,3 +1,6 @@
+# Versão do pacote
+__version__ = "0.1.6"
+
 from st_aggrid import AgGrid, GridOptionsBuilder
 
 def make_grid(df):

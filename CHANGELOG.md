@@ -1,3 +1,7 @@
+## 0.1.6 - 2025-04-21
+
+## 
+- doc
 # Changelog
 
 Todas as alterações notáveis neste projeto serão documentadas aqui.
